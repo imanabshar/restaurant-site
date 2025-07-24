@@ -212,7 +212,7 @@ nav {
 }
 
 .description {
-    max-width: 55%;
+    width: 55%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -338,7 +338,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.5rem;
     padding: 20px;
 }
 
@@ -676,4 +676,240 @@ footer {
 
 footer i {
     font-size: 1.5rem;
+}
+
+
+/* Navbar */
+@media (max-width: 920px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        gap: 1rem;
+    }
+
+    .logo {
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icons,
+    .drop-down {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+/* Hero Section  */
+@media (max-width: 920px) {
+    .top-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .top-content .content {
+        max-width: 100%;
+    }
+
+    .top-image {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .top-content .content h1 {
+        font-size: 1.7rem;
+    }
+
+    .variety-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .variety-icon svg {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* About Section */
+@media (max-width: 780px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-content div {
+        max-width: none;
+        height: 15rem;
+    }
+
+    .about-content img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .description {
+        width: 80%;
+    }
+}
+
+/* Menu Section */
+@media (max-width: 1024px) {
+    .menu-box {
+        max-width: 30%;
+        flex: 1 1 30%;
+    }
+}
+
+@media (max-width: 780px) {
+    .menu-box {
+        max-width: 45%;
+        flex: 1 1 45%;
+    }
+
+    .menu-list ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .menu-box {
+        max-width: 80%;
+        flex: 1 1 80%;
+    }
+}
+
+@media (max-width: 920px) {
+    .menu-images {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu-images img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .search-bar {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar div {
+        font-size: 0.85rem;
+    }
+}
+
+/* Offers Section  */
+@media (max-width: 780px) {
+    .offers-container {
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .offers-content,
+    .offers-image {
+        width: 90%;
+    }
+}
+
+/* Popular Dishes */
+@media (max-width: 850px) {
+    .popular-dishes .container {
+        flex-direction: column;
+    }
+
+    .popular-dishes .box {
+        width: 75%;
+    }
+}
+
+@media (max-width: 550px) {
+    .popular-dishes .box {
+        width: 90%;
+    }
+}
+
+/* Testimonials Section */
+@media (max-width: 920px) {
+    .testimonials {
+        flex-wrap: wrap;
+    }
+
+    .testimonial-box {
+        width: 45%;
+    }
+}
+
+/* Order Section  */
+@media (max-width: 780px) {
+    .order-section {
+        padding: 20px 10px;
+    }
+
+    .order-section .container {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+@media (max-width: 920px) {
+    .subscribe {
+        width: 75vw;
+        max-width: none;
+    }
+
+    .subscribe button {
+        width: 30%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        padding: 10px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }
